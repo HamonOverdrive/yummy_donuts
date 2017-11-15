@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yummy Donuts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='donut.ico') }}">
+</head>
+
+{#implement nav bar#}
+<header>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+            <a class="navbar-brand" href="/"><img style="max-width:50px; margin-top: 0;" src="{{ url_for('static', filename='images/mainlogo.jpg') }}"></a>
+
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/menu/">Menu</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/location/">Location</a></li>
+						<li><a href="/aboutus">About Us</a></li>
+					</ul>
+				</li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+<body>
+{#main content html here#}
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="headline">Yummy Donuts</h1>
+    <p>A donut have never been this yummy</p>
+    <br>
+  </div>
+</div>
+
+<section id="mainsection">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="main3img" src="http://www.meghantelpner.com/wp-content/uploads/2014/09/shutterstock_111999368.jpg">
+                <h3>Coffee</h3>
+                <p>Start your morning with some hot fresh coffee.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="main3img" src="https://www.donutbar.com/wp-content/uploads/2017/05/donut-bar-homers.png">
+                <h3>Donuts</h3>
+                <p>Fresh donuts every day with many varieties.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="main3img" src="http://www.chewboom.com/wp-content/uploads/2016/05/2-for-4-Breakfast-Croissants-at-Jack-in-the-Box-678x381.jpg">
+                <h3>Sandwiches</h3>
+                <p>Sandwiches available all hours!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{#main content ends here#}
+
+{#put footer start here#}
+<footer class="page-footer">
+    <div class="container">
+
+{#            quicklinks and social dunkin donuts style footer#}
+    <section class="footer__share">
+            <div class="footer__quick-links">
+                <h2 class="footer__heading">QUICK LINKS</h2>
+                <ul class="quick-links__list list-inline">
+                    <li class="quick-links__item ">
+                        <a class="quick-links__link" href="http://news.dunkindonuts.com/" target="_blank" data-toggle="modal-external-links">
+                            Press Room
+                        </a>
+                    </li>
+
+                    <li class="quick-links__item ">
+                        <a class="quick-links__link" href="/en/dd-cards/mobile-app">
+                            Mobile App
+                        </a>
+                    </li>
+
+                    <li class="quick-links__item ">
+                        <a class="quick-links__link" href="http://www.dunkinbrands.com/" target="_blank">
+                            Corporate
+                        </a>
+                    </li>
+
+                    <li class="quick-links__item ">
+                        <a class="quick-links__link" href="/en/careers">
+                            Careers
+                        </a>
+                    </li>
+
+                    <li class="quick-links__item ">
+                        <a class="quick-links__link" href="http://www.dunkinbrands.com/franchising" target="_blank">
+                            Franchising
+                        </a>
+                    </li>
+
+                    <li class="quick-links__item ">
+                        <a class="quick-links__link" href="/en/about/contact-us/faqs">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__social">
+                <h2 class="footer__heading">FOLLOW US</h2>
+                <ul class="footer__social-list list-inline">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://twitter.com/DunkinDonuts" target="_blank" data-toggle="modal-external-links">
+                            <img class="footer__social-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAB+ElEQVRIibVWO3LiQBCdAxA4IdjI2gC6Q45A5tDcAI7gzKGnW7uxuYG5gX0DdAPvDaSeoUwVibiBNkCiRDE/4XJXdSa9p/fmTbeUSqxyomeCtBSgZwH9em6kpUF6OIz1KBUrWHvUmUF+E6DaIDcJvbWYz28mFCSdSOQk3030LJmszvSdAH1+g7AxyI0A1WaaL5LsHGBlaq9+XKGrvedsgD5+grCzeo86uyC0mM+/BYpcxZ+jzaVK5MIFJMDHIBDQR53puzPONF8Y4H8GaeNy7qy2vYuOrye9m+hZgLjw5cNM84VLiAVaK6WUEuAnH2kXMIO0GZLK0zu8dWCWXms76/pAe9SZBVqf7AskMhLKw1iPVAdynTg+htSEyisEuanu//5S/kSe7L2J1CMkhbTsJzO1fMHs+uv3n/vgVwnQ59WljlRsUXRKvf4LUmkxnw9RHBsUh7EeKQu0Dg6AAWGKYQlypZRSajfRswhp0965ILlBXsVwzsMhZokgV4KkQxb7BswVaf9ut2OrH6DaIG9jZ9kuiqvJ4+nCZY9nMvG7xfxFkJYG6NFi/mKAXwWpTCRrDPaGfb9OSzyyVW5vfx4iW+WmvghPkDhpKcdbgJ+ihH2rvWecQoZcJf0JuqpNZzK5AB8HqQtVO8RX7Z4sevYXBrmwQOshP9f/AVDAGb0Y1HFgAAAAAElFTkSuQmCC" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://www.facebook.com/DunkinDonutsUS/" target="_blank" data-toggle="modal-external-links">
+                            <img class="footer__social-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAB+ElEQVRIibVWO3LiQBCdAxA4IdjI2gC6Q45A5tDcAI7gzKGnW7uxuYG5gX0DdAPvDaSeoUwVibiBNkCiRDE/4XJXdSa9p/fmTbeUSqxyomeCtBSgZwH9em6kpUF6OIz1KBUrWHvUmUF+E6DaIDcJvbWYz28mFCSdSOQk3030LJmszvSdAH1+g7AxyI0A1WaaL5LsHGBlaq9+XKGrvedsgD5+grCzeo86uyC0mM+/BYpcxZ+jzaVK5MIFJMDHIBDQR53puzPONF8Y4H8GaeNy7qy2vYuOrye9m+hZgLjw5cNM84VLiAVaK6WUEuAnH2kXMIO0GZLK0zu8dWCWXms76/pAe9SZBVqf7AskMhLKw1iPVAdynTg+htSEyisEuanu//5S/kSe7L2J1CMkhbTsJzO1fMHs+uv3n/vgVwnQ59WljlRsUXRKvf4LUmkxnw9RHBsUh7EeKQu0Dg6AAWGKYQlypZRSajfRswhp0965ILlBXsVwzsMhZokgV4KkQxb7BswVaf9ut2OrH6DaIG9jZ9kuiqvJ4+nCZY9nMvG7xfxFkJYG6NFi/mKAXwWpTCRrDPaGfb9OSzyyVW5vfx4iW+WmvghPkDhpKcdbgJ+ihH2rvWecQoZcJf0JuqpNZzK5AB8HqQtVO8RX7Z4sevYXBrmwQOshP9f/AVDAGb0Y1HFgAAAAAElFTkSuQmCC" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://www.pinterest.com/DunkinDonuts/" target="_blank" data-toggle="modal-external-links">
+                            <img class="footer__social-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAB+ElEQVRIibVWO3LiQBCdAxA4IdjI2gC6Q45A5tDcAI7gzKGnW7uxuYG5gX0DdAPvDaSeoUwVibiBNkCiRDE/4XJXdSa9p/fmTbeUSqxyomeCtBSgZwH9em6kpUF6OIz1KBUrWHvUmUF+E6DaIDcJvbWYz28mFCSdSOQk3030LJmszvSdAH1+g7AxyI0A1WaaL5LsHGBlaq9+XKGrvedsgD5+grCzeo86uyC0mM+/BYpcxZ+jzaVK5MIFJMDHIBDQR53puzPONF8Y4H8GaeNy7qy2vYuOrye9m+hZgLjw5cNM84VLiAVaK6WUEuAnH2kXMIO0GZLK0zu8dWCWXms76/pAe9SZBVqf7AskMhLKw1iPVAdynTg+htSEyisEuanu//5S/kSe7L2J1CMkhbTsJzO1fMHs+uv3n/vgVwnQ59WljlRsUXRKvf4LUmkxnw9RHBsUh7EeKQu0Dg6AAWGKYQlypZRSajfRswhp0965ILlBXsVwzsMhZokgV4KkQxb7BswVaf9ut2OrH6DaIG9jZ9kuiqvJ4+nCZY9nMvG7xfxFkJYG6NFi/mKAXwWpTCRrDPaGfb9OSzyyVW5vfx4iW+WmvghPkDhpKcdbgJ+ihH2rvWecQoZcJf0JuqpNZzK5AB8HqQtVO8RX7Z4sevYXBrmwQOshP9f/AVDAGb0Y1HFgAAAAAElFTkSuQmCC" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://www.instagram.com/dunkindonuts/?hl=en" target="_blank" data-toggle="modal-external-links">
+                            <img class="footer__social-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAACH0lEQVRIicWWMXLbMBBFcQSW6YzCJNaThl1Kq0sZ3SAqcoBcIOPdpXvrBtIBPBPfQCrTxTeQAXCskrwBU4i0KAqASIozwcwWHID7sB/YXQgxcOwkfnq/e7yxwPcW+N7G/OX97vFmJzEa6uvisJDNDPBKKyoMcOUzDbQzip/2gHIK4CYEC9hq1Aa04p8jgUcFFBUWsllvqAFaXwvt2OJ/QC/Dp5A3JHseY3oG3QNK163VwG8GeGEhm/U1n2pa0d9eEmvFZTEyPwPqHSXfA0pPXmJfUJ16lQGumpvsy/WLu5sAvHX6vf31WQQXDADvAaUGQg2ETeHw+X1L+EcDdt9EDziPMTXAKwO8sZA9+DbjDUjxcy9w7WCTx5gWEqPu7beKlkJ8HNmm+Z4CXBngquX8bK0QQmggrL+3QamB/gwCFxIjA7y4Fjw4YpNk80JiVBeV83WKXweBu458YA20KyRGBzihAVqbJJsLIYRJsnnr3yDYJkhCCCGsomWviGt4u9UVEiML2UPn3yDY3NJX4dhtENzdhHNO0YsPrBWXJznnkvtSWnitkd85T+vTZHdE3W5leYxpn87UNJXWDT+J1vkccktDhVH8ZBR9+3hZBkwDfTeKf4eO7mwcqhKXg2Tta/W5e0ceYzo5XPFrr76ex5i2isHVkQ56TBzK4/iHn1ZcDmmr7ugHpJNWXFpFy7FPJo8CvDCKXgzwtl2XD3Ysn33GPy4XkTuaWZ7kAAAAAElFTkSuQmCC" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://www.youtube.com/user/dunkindonuts#" target="_blank" data-toggle="modal-external-links">
+                            <img class="footer__social-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAB+ElEQVRIibVWO3LiQBCdAxA4IdjI2gC6Q45A5tDcAI7gzKGnW7uxuYG5gX0DdAPvDaSeoUwVibiBNkCiRDE/4XJXdSa9p/fmTbeUSqxyomeCtBSgZwH9em6kpUF6OIz1KBUrWHvUmUF+E6DaIDcJvbWYz28mFCSdSOQk3030LJmszvSdAH1+g7AxyI0A1WaaL5LsHGBlaq9+XKGrvedsgD5+grCzeo86uyC0mM+/BYpcxZ+jzaVK5MIFJMDHIBDQR53puzPONF8Y4H8GaeNy7qy2vYuOrye9m+hZgLjw5cNM84VLiAVaK6WUEuAnH2kXMIO0GZLK0zu8dWCWXms76/pAe9SZBVqf7AskMhLKw1iPVAdynTg+htSEyisEuanu//5S/kSe7L2J1CMkhbTsJzO1fMHs+uv3n/vgVwnQ59WljlRsUXRKvf4LUmkxnw9RHBsUh7EeKQu0Dg6AAWGKYQlypZRSajfRswhp0965ILlBXsVwzsMhZokgV4KkQxb7BswVaf9ut2OrH6DaIG9jZ9kuiqvJ4+nCZY9nMvG7xfxFkJYG6NFi/mKAXwWpTCRrDPaGfb9OSzyyVW5vfx4iW+WmvghPkDhpKcdbgJ+ihH2rvWecQoZcJf0JuqpNZzK5AB8HqQtVO8RX7Z4sevYXBrmwQOshP9f/AVDAGb0Y1HFgAAAAAElFTkSuQmCC" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="col l4 offset-l2 s12">
+                <h6 class="white-text">Legal stuff:</h6>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="/about/tos/">Terms and Conditions</a></li>
+                  <li><a class="grey-text text-lighten-3" href="/about/privacy-policy/">Privacy Policy</a></li>
+
+                </ul>
+        </div>
+
+{#            the footer style ends here#}
+
+</footer>
+{#footer ends here#}
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>
+
+</html>

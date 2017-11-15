@@ -1,0 +1,145 @@
+h1 {
+	font-weight: bold;
+
+}
+h6 {
+	color: white;
+}
+
+.page-footer{
+	margin-top: 0;
+	background-color: #1f1f1f;
+}
+
+.footer__share {
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+.footer__heading{
+	color: white;
+}
+
+footer .quick-links__link {
+
+    color: #e22882;
+    text-decoration: none;
+    line-height: 30px;
+
+}
+
+
+
+/*jumbotron css*/
+.jumbotron {
+	background-image: url("https://m0.joe.co.uk/wp-content/uploads/2016/06/08180858/iStock_000073881727_Small.jpg");
+	background-size: 100% 100%;
+	color: #ffffff;
+	height: 75vh;
+	text-shadow: 0 1px 2px rgba(34,34,34,0.75);
+}
+
+.jumbo2{
+	background-image: url("https://s.hswstatic.com/gif/coffee-571245571.jpg");
+	background-size: 100% 100%;
+  }
+
+.jumbocontact{
+	background-image: url("http://cdn.skim.gs/images/lcqg8uqnab5md8x2jufz/drinking-coffee-could-save-your-liver");
+	background-size: 100% 100%;
+	margin-bottom: 0;
+  }
+
+.jumboabout{
+	background-image: url("https://randomlyedible.files.wordpress.com/2013/12/20131213-090223.jpg");
+	background-size: 100% 100%;
+  }
+
+.jumbolocation{
+	background-image: url("https://s3-media4.fl.yelpcdn.com/bphoto/kCFBCL6gIAwG3_Vn2MCUXA/o.jpg");
+	background-size: 100% 100%;
+  }
+
+/*Nav bar stuff*/
+.navbar {
+	margin-bottom: 0;
+}
+
+
+.wrap-menu{
+		display:table;
+		width:440px;
+		max-width:440px;
+		.category-item{
+			width:80%;
+			margin:0 auto;
+			text-align:center;
+			font-size: 36px;
+			color:#cc9900;
+			.ic-cate{
+			display:inline-block;
+			width:235px;
+			height:27px;
+			}
+		}
+		.row-menu-wrap{
+			margin-bottom: 35px;
+			.row-menu{
+			display:table-row;
+			.item-menu{
+				display:table-cell;
+				width:90%;
+				font-size:21px;
+				font-family:'yeseva';
+		    color:#cc9900;
+			}
+			.item-prise{
+				display:table-cell;
+				font-size:21px;
+				font-family:'yeseva';
+				color:#cc9900;
+			}
+		}
+		}
+
+	}
+	.gold-line{
+		display:inline-block;
+		width:100%;
+		height:1px;
+		margin-bottom:8px;
+    background-color:#cc9900;
+	}
+	.item-descr{
+		font-size:16px;
+		font-family:'lato';
+	}
+	/*nav bar stuff ends here*/
+
+/*img tags	*/
+.main3img{
+    float: center;
+    text-align: center;
+    padding:10px;
+	width:40%;
+}
+
+/*section css stuff*/
+#maplocation{
+	margin-bottom:25px;
+}
+
+#mainsection{
+	margin-bottom:25px;
+}
+
+#menuid{
+	margin-bottom:25px;
+}

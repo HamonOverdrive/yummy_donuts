@@ -1,0 +1,27 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+    <div class="jumbotron jumbolocation">
+      <div class="container">
+        <h1 class="headline">Location:</h1>
+        <p>1609 S Broadway, Santa Maria, CA 93454</p>
+      </div>
+    </div>
+
+    <section id="maplocation">
+        <div class="container">
+        <div class="row">
+            <div class=class="col-xs-1" align="center">
+            {% with map=googlemap_obj("another-map", 34.93117, -120.437318, markers=[(34.93117 ,  -120.437318, "I'm Yummy Donuts")]) %}
+                {{map.html}}
+                {{map.js}}
+            {% endwith %}
+            </div>
+        </div>
+    </section>
+</div>
+
+
+{% endblock %}
+
